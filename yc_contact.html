@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Yogiraj Containers Pvt. Ltd.</title>
+  <meta name="description" content="Contact Yogiraj Containers Pvt. Ltd. for paint container inquiries. Email: yogirajcontainers2025@gmail.com. Located in Ankleshwar GIDC, Bharuch, Gujarat."/>
+  <link rel="stylesheet" href="yc_styles.css"/>
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <a href="yc_index.html" class="nav-logo">
+    <img src="yc_logo_full.png" alt="Yogiraj Containers Pvt. Ltd." class="nav-logo-img"/>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="yc_index.html">Home</a></li>
+    <li>
+      <button class="nav-toggle">About Us
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <ul class="dropdown">
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Directors</a></li>
+        <li><a href="#">Quality Policy</a></li>
+        <li><a href="#">Infrastructure</a></li>
+      </ul>
+    </li>
+    <li><a href="yc_products.html">Products</a></li>
+    <li><a href="#">Clients</a></li>
+    <li><a href="#">Certifications</a></li>
+    <li><a href="#">Inquiry</a></li>
+    <li><a href="yc_contact.html" class="nav-cta active">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--gold)">Get In Touch</span>
+    <h1>Contact Us</h1>
+    <p>Send us your requirements or questions — we respond to all B2B inquiries promptly.</p>
+    <div class="breadcrumb"><a href="yc_index.html">Home</a> › <span>Contact Us</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="cf reveal">
+        <h2>Send an Inquiry</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="fg">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" placeholder="Rahul" required/>
+            </div>
+            <div class="fg">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" placeholder="Mehta" required/>
+            </div>
+          </div>
+          <div class="fg">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="rahul@company.com" required/>
+          </div>
+          <div class="fg">
+            <label for="company">Company Name *</label>
+            <input type="text" id="company" placeholder="Your Company Pvt. Ltd." required/>
+          </div>
+          <div class="fg">
+            <label for="product">Product of Interest</label>
+            <select id="product">
+              <option value="">Select a product...</option>
+              <option>MS Round Paint Container</option>
+              <option>GI Square Paint Container</option>
+              <option>Custom Specification Container (MS / GI)</option>
+              <option>General Inquiry</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="quantity">Approximate Quantity Required</label>
+            <input type="text" id="quantity" placeholder="e.g. 10,000 pcs / month"/>
+          </div>
+          <div class="fg">
+            <label for="message">Your Message *</label>
+            <textarea id="message" placeholder="Describe your requirements — capacity, dimensions, material, quantity, delivery location, etc." required></textarea>
+          </div>
+          <button type="submit" class="btn-gold" style="width:100%;justify-content:center;font-size:1rem;">
+            Submit Inquiry
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div id="successMsg" style="display:none;margin-top:1rem;padding:1rem;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;color:#15803d;font-size:.9rem;text-align:center;">
+            ✅ Thank you! Your inquiry has been received. We'll respond within 1 business day.
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="reveal">
+        <h2 style="font-family:'Rajdhani',sans-serif;font-size:1.8rem;font-weight:700;color:var(--indigo);margin-bottom:.5rem">Our Office & Plant</h2>
+        <p style="color:var(--gray-500);margin-bottom:2rem">Visit us or reach out via email. We welcome B2B partnerships across Gujarat and India.</p>
+
+        <div class="info-card">
+          <div class="ic-icon">📍</div>
+          <div class="ic-text">
+            <h4>Plant & Registered Office</h4>
+            <p>Plot No C1B 417 &amp; 418, Near Ramdev Chowkadi,<br/>Ankleshwar Industrial Estate, Ankleshwar GIDC,<br/>Bharuch, Gujarat — 393002</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="ic-icon">✉️</div>
+          <div class="ic-text">
+            <h4>Email</h4>
+            <a href="mailto:yogirajcontainers2025@gmail.com">yogirajcontainers2025@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="ic-icon">🕐</div>
+          <div class="ic-text">
+            <h4>Working Hours</h4>
+            <p>Monday – Saturday: 9:00 AM – 6:00 PM IST</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="ic-icon">🏆</div>
+          <div class="ic-text">
+            <h4>Certifications</h4>
+            <p>ISO 9001:2015 · MSME Registered</p>
+            <p>GIDC Unit · BIS Standards Compliant</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="ic-icon">👥</div>
+          <div class="ic-text">
+            <h4>Directors</h4>
+            <p>Akshat Shah · Tushar Patel</p>
+            <p>Jenish Patel · Chintan Kanara</p>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.9!2d73.01!3d21.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDM3JzEyLjAiTiA3M8KwMDAnMzYuMCJF!5e0!3m2!1sen!2sin!4v1000000000001"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Yogiraj Containers Location Map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="container">
+    <div>
+      <h2>Prefer to Email Directly?</h2>
+      <p>Our team is ready to discuss your container requirements.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="mailto:yogirajcontainers2025@gmail.com" class="btn-indigo">✉ yogirajcontainers2025@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="yc_index.html" class="nav-logo foot-logo" style="display:inline-flex">
+          <img src="yc_logo_full.png" alt="Yogiraj Containers Pvt. Ltd." class="nav-logo-img" style="height:46px"/>
+        </a>
+        <p>A B2B manufacturer of premium MS Round and GI Square paint containers. Ankleshwar GIDC, Gujarat.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Directors</a></li>
+          <li><a href="#">Quality Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="yc_products.html">Products</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Certifications</a></li>
+          <li><a href="yc_contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-row">
+          <span class="fc-icon">📍</span>
+          <span>Plot No C1B 417 &amp; 418, Near Ramdev Chowkadi, Ankleshwar GIDC, Bharuch, Gujarat — 393002</span>
+        </div>
+        <div class="footer-contact-row">
+          <span class="fc-icon">✉</span>
+          <a href="mailto:yogirajcontainers2025@gmail.com">yogirajcontainers2025@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>©2025 Yogiraj Containers Pvt. Ltd. All rights reserved.</span>
+      <span>Ankleshwar GIDC, Gujarat — 393002</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    const s = hamburger.querySelectorAll('span');
+    if (navLinks.classList.contains('open')) {
+      s[0].style.transform='rotate(45deg) translate(5px,5px)'; s[1].style.opacity='0'; s[2].style.transform='rotate(-45deg) translate(5px,-5px)';
+    } else { s[0].style.transform=s[1].style.opacity=s[2].style.transform=''; }
+  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e,i) => { if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*100);observer.unobserve(e.target);} });
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('successMsg').style.display = 'block';
+    e.target.reset();
+    document.getElementById('successMsg').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }
+</script>
+</body>
+</html>
