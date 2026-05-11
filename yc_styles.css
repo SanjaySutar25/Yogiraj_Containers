@@ -73,12 +73,12 @@ body{font-family:'Inter',sans-serif;color:var(--gray-800);background:#fff;overfl
 .slider-prev{left:1.5rem}
 .slider-next{right:1.5rem}
 
-/* Dot nav */
-.slider-dots{position:absolute;bottom:5.5rem;left:50%;transform:translateX(-50%);
-  z-index:4;display:flex;gap:.6rem}
-.slider-dot{width:10px;height:10px;border-radius:50%;border:none;
-  background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s,transform .3s;padding:0}
-.slider-dot.active{background:var(--orange);transform:scale(1.3)}
+/* Dot nav — bottom-right, small */
+.slider-dots{position:absolute;bottom:2.2rem;right:2rem;left:auto;transform:none;
+  z-index:4;display:flex;gap:.5rem}
+.slider-dot{width:7px;height:7px;border-radius:50%;border:none;
+  background:rgba(255,255,255,.4);cursor:pointer;transition:background .3s,transform .3s;padding:0}
+.slider-dot.active{background:var(--orange);transform:scale(1.35)}
 
 /* Per-slide captions */
 .slide-captions{position:relative;min-height:3.5rem;margin-bottom:2.5rem}
