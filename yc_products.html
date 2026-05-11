@@ -11,7 +11,8 @@
 
 <nav class="navbar scrolled" id="navbar">
   <a href="yc_index.html" class="nav-logo">
-    <img src="yc_logo_full.png" alt="Yogiraj Containers Pvt. Ltd." class="nav-logo-img"/>
+    <img src="yc_logo_new.png" alt="Yogiraj Containers Pvt. Ltd." class="nav-logo-img"/>
+
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="yc_index.html">Home</a></li>
@@ -28,9 +29,9 @@
       </ul>
     </li>
     <li><a href="yc_products.html" class="active">Products</a></li>
-    <li><a href="#">Clients</a></li>
-    <li><a href="#">Certifications</a></li>
-    <li><a href="#">Inquiry</a></li>
+    <li><a href="yc_index.html#clients">Clients</a></li>
+    <li><a href="yc_index.html#certifications">Certifications</a></li>
+    <li><a href="yc_contact.html">Inquiry</a></li>
     <li><a href="yc_contact.html" class="nav-cta">Contact Us</a></li>
   </ul>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -174,7 +175,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="yc_index.html" class="nav-logo foot-logo" style="display:inline-flex">
-          <img src="yc_logo_full.png" alt="Yogiraj Containers Pvt. Ltd." class="nav-logo-img" style="height:46px"/>
+          <img src="yc_logo_new.png" alt="Yogiraj Containers Pvt. Ltd." class="nav-logo-img" style="height:46px"/>
         </a>
         <p>A B2B manufacturer of premium MS Round and GI Square paint containers. Ankleshwar GIDC, Gujarat.</p>
       </div>
@@ -219,12 +220,30 @@
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
   hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
+    const isOpen = navLinks.classList.toggle('open');
     const s = hamburger.querySelectorAll('span');
-    if (navLinks.classList.contains('open')) {
+    if (isOpen) {
       s[0].style.transform='rotate(45deg) translate(5px,5px)'; s[1].style.opacity='0'; s[2].style.transform='rotate(-45deg) translate(5px,-5px)';
-    } else { s[0].style.transform=s[1].style.opacity=s[2].style.transform=''; }
+    } else {
+      s[0].style.transform=s[1].style.opacity=s[2].style.transform='';
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('mobile-open'));
+      document.querySelectorAll('.nav-toggle').forEach(b => b.classList.remove('dropdown-active'));
+    }
   });
+
+  // Mobile dropdown accordion toggle
+  document.querySelectorAll('.nav-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dropdown = btn.parentElement.querySelector('.dropdown');
+      if (!dropdown) return;
+      if (window.innerWidth > 768) return;
+      const isActive = dropdown.classList.contains('mobile-open');
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('mobile-open'));
+      document.querySelectorAll('.nav-toggle').forEach(b => b.classList.remove('dropdown-active'));
+      if (!isActive) { dropdown.classList.add('mobile-open'); btn.classList.add('dropdown-active'); }
+    });
+  });
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((e,i) => { if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*80);observer.unobserve(e.target);} });
   },{threshold:0.1});

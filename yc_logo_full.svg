@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160">
+
+  <!-- ═══ DIAMOND ICON ═══ -->
+  <g transform="translate(10, 5)">
+    <!-- Outer diamond outline -->
+    <polygon
+      points="75,4 146,75 75,146 4,75"
+      fill="none"
+      stroke="white"
+      stroke-width="12"
+    />
+
+    <!-- Inner diamond (negative space border) -->
+    <polygon
+      points="75,22 128,75 75,128 22,75"
+      fill="none"
+      stroke="white"
+      stroke-width="6"
+    />
+
+    <!-- YC Monogram inside diamond -->
+    <!-- Y shape: two top arms + vertical stem -->
+    <!-- Left arm of Y -->
+    <line x1="52" y1="52" x2="75" y2="78" stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <!-- Right arm of Y -->
+    <line x1="98" y1="52" x2="75" y2="78" stroke="white" stroke-width="9" stroke-linecap="round"/>
+    <!-- Vertical stem of Y -->
+    <line x1="75" y1="78" x2="75" y2="100" stroke="white" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- C shape -->
+    <path d="M 96,66 A 20,22 0 1,0 96,86" fill="none" stroke="white" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <!-- ═══ COMPANY NAME TEXT ═══ -->
+  <!-- YOGIRAJ -->
+  <text
+    x="172" y="72"
+    font-family="'Rajdhani', 'Arial Narrow', 'Arial', sans-serif"
+    font-size="38"
+    font-weight="700"
+    letter-spacing="3"
+    fill="white"
+  >YOGIRAJ</text>
+
+  <!-- CONTAINERS -->
+  <text
+    x="172" y="112"
+    font-family="'Rajdhani', 'Arial Narrow', 'Arial', sans-serif"
+    font-size="38"
+    font-weight="700"
+    letter-spacing="3"
+    fill="white"
+  >CONTAINERS</text>
+
+  <!-- PVT. LTD. -->
+  <text
+    x="172" y="140"
+    font-family="'Rajdhani', 'Arial Narrow', 'Arial', sans-serif"
+    font-size="20"
+    font-weight="500"
+    letter-spacing="4"
+    fill="rgba(255,255,255,0.65)"
+  >PVT. LTD.</text>
+
+</svg>
